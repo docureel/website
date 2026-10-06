@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOCUREEL | Premium Wedding Films & Photography</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome & Flatpickr -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="menu-trigger" id="openMenuBtn">
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <a href="#" class="logo">
+            <img src="logo.png" alt="DOCUREEL"> 
+        </a>
+        <div class="spacer"></div>
+    </header>
+
+    <!-- FULL SCREEN OVERLAY MENU -->
+    <div class="overlay-menu" id="overlayMenu">
+        <div class="menu-header">
+            <div class="close-btn" id="closeMenuBtn">&times;</div>
+            <img src="logo.png" alt="DOCUREEL" class="menu-logo">
+            <div class="spacer"></div>
+        </div>
+
+        <div class="menu-content" id="mainMenuContent">
+            <nav class="menu-links">
+                <a href="#home" class="menu-item">Photography</a>
+                <a href="#films" class="menu-item">Films</a>
+                <a href="#" class="menu-item" id="menuPackagesBtn">Packages</a>
+                <a href="#" class="menu-item" id="menuContactBtn">Contact Us</a>
+                <a href="#magazine" class="menu-item">Editorial</a>
+                <a href="#" class="menu-item" id="moreBtn">More <i class="fas fa-angle-right"></i></a>
+            </nav>
+            <div class="menu-footer">
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/docureel" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/share/1CLTi1BAFo/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+                <button class="get-in-touch-btn" id="getInTouchBtn">Get In Touch</button>
+            </div>
+        </div>
+
+        <div class="menu-content hidden-menu" id="subMenuContent">
+            <nav class="menu-links">
+                <a href="#" class="menu-item back-btn" id="backBtn"><i class="fas fa-angle-left"></i> Back</a>
+                <a href="#" class="menu-item">Careers</a>
+                <a href="#" class="menu-item">Travel</a>
+                <a href="#" class="menu-item">Backyard</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- PACKAGES MODAL -->
+    <div id="packagesModal" class="modal">
+        <div class="modal-content packages-box">
+            <span class="close-modal" id="closePackagesModal">&times;</span>
+            <h2>Our Packages</h2>
+            <div class="package-categories">
+                <button class="category-btn active-btn" data-target="cat-wedding">Wedding Combo Packages</button>
+                <button class="category-btn" data-target="cat-cinema">Only Cinematography Package</button>
+                <button class="category-btn" data-target="cat-daylong">Day Long Packages</button>
+                <button class="category-btn" data-target="cat-photo">Only Photography Package</button>
+                <button class="category-btn" data-target="cat-prepost">Pre and Post Wedding</button>
+            </div>
+            <div id="cat-wedding" class="package-list active-category"><img src="pricing1.jpg" alt="P1"><img src="pricing2.jpg" alt="P2"></div>
+            <div id="cat-cinema" class="package-list hidden-category"><img src="pricing3.jpg" alt="P3"><img src="pricing4.jpg" alt="P4"></div>
+            <div id="cat-daylong" class="package-list hidden-category"><img src="pricing5.jpg" alt="P5"><img src="pricing6.jpg" alt="P6"></div>
+            <div id="cat-photo" class="package-list hidden-category"><img src="pricing7.jpg" alt="P7"><img src="pricing8.jpg" alt="P8"></div>
+            <div id="cat-prepost" class="package-list hidden-category"><img src="pricing9.jpg" alt="P9"><img src="pricing10.jpg" alt="P10"></div>
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <video autoplay muted loop playsinline>
+            <source src="hero.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!-- MAGAZINE INTRO -->
+    <section class="magazine-intro" id="magazine">
+        <h2 class="modern-heading">A MODERN APPROACH<br><span>to an</span> AGE OLD TRADITION</h2>
+        <div class="intro-images">
+            <img src="intro1.jpg" alt="Intro Image 1">
+            <img src="intro2.jpg" alt="Intro Image 2">
+        </div>
+        <p class="intro-text">Considered to be the epitome of Modern Photography and Filmmaking, DOCUREEL has modernized the Indian and Bangladeshi Wedding landscape on a regular basis. For almost a decade DocuReel has been curating photographs and films which are timeless and has been etched in memories of thousands of people forever.</p>
+    </section>
+
+    <!-- ARCHIVE MASONRY GRID -->
+    <section class="archive-grid">
+        <div class="masonry">
+            <img src="p1.jpg" alt="1"><img src="p2.jpg" alt="2"><img src="p3.jpg" alt="3"><img src="p4.jpg" alt="4">
+            <img src="p5.jpg" alt="5"><img src="p6.jpg" alt="6"><img src="p7.jpg" alt="7"><img src="p8.jpg" alt="8">
+            <img src="p9.jpg" alt="9">
+            
+            <div class="iconic-text">
+                <h2>some of the most<br><span>"ICONIC"</span><br>wedding images</h2>
+            </div>
+            
+            <img src="p10.jpg" alt="10"><img src="p11.jpg" alt="11"><img src="p12.jpg" alt="12"><img src="p13.jpg" alt="13">
+            <img src="p14.jpg" alt="14"><img src="p15.jpg" alt="15"><img src="p16.jpg" alt="16"><img src="p17.jpg" alt="17">
+            <img src="p18.jpg" alt="18"><img src="p19.jpg" alt="19"><img src="p20.jpg" alt="20"><img src="p21.jpg" alt="21">
+            <img src="p22.jpg" alt="22"><img src="p23.jpg" alt="23"><img src="p24.jpg" alt="24"><img src="p25.jpg" alt="25">
+        </div>
+    </section>
+
+    <!-- SOUL + CINEMA -->
+    <section class="soul-cinema">
+        <video autoplay muted loop playsinline class="bg-video">
+            <source src="soul.mp4" type="video/mp4">
+        </video>
+        <div class="overlay-dark"></div>
+        <div class="soul-content">
+            <h2>SOUL <span>+</span> CINEMA</h2>
+            <p>Every wedding is unique and so are our films. For past 8 years DocuReel has set new benchmarks of storytelling within wedding realm and beyond. We are fortunate to have experienced so unique cultures and traditions and to document stories that continuously overwhelm us.</p>
+        </div>
+    </section>
+
+    <!-- FILMS SECTION -->
+    <section class="films-section" id="films">
+        <h2 class="big-heading">FILMS</h2>
+        <div class="video-list">
+            <video src="film1.mp4" autoplay muted loop playsinline class="smart-video"></video>
+            <video src="film2.mp4" autoplay muted loop playsinline class="smart-video"></video>
+            <video src="film3.mp4" autoplay muted loop playsinline class="smart-video"></video>
+            <video src="film4.mp4" autoplay muted loop playsinline class="smart-video"></video>
+            <video src="film5.mp4" autoplay muted loop playsinline class="smart-video"></video>
+            <video src="film6.mp4" autoplay muted loop playsinline class="smart-video"></video>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM MODAL (With FormSubmit) -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content form-container">
+            <span class="close-modal" id="closeContactModal">&times;</span>
+            <h2 class="contact-heading" style="text-align: center; margin-bottom: 20px;">Contact</h2>
+            <p class="form-intro">Please fill in the form below and provide as much details as possible to help us create an accurate quote. We will get back within 48hrs.</p>
+            
+            <form id="bookingForm">
+                <!-- FormSubmit Settings -->
+                <input type="hidden" name="_subject" value="New Booking Request for DOCUREEL!">
+                <input type="hidden" name="_captcha" value="false">
+
+                <div class="form-group"><label>Name <span>(required)</span></label><input type="text" name="Name" required></div>
+                <div class="form-group"><label>Email <span>(required)</span></label><input type="email" name="Email" required></div>
+                <div class="form-group"><label>Phone <span>(required)</span></label><input type="tel" name="Phone" required></div>
+                <div class="form-group"><label>Estimated Guest Count <span>(required)</span></label><input type="text" name="Guest_Count" required></div>
+                <div class="form-group"><label>Tell us more about your wedding <span>(required)</span></label><textarea name="Details" rows="3" required></textarea></div>
+                <div class="form-group"><label>Location <span>(required)</span></label><input type="text" name="Location" required></div>
+                <div class="form-group"><label>Event Dates <span>(Multiple Selection)</span></label><input type="text" id="eventDates" name="Dates" placeholder="Select dates..." required></div>
+                <div class="form-group checkbox-group">
+                    <label>Services looking for?</label>
+                    <label class="check-container"><input type="radio" name="Service" value="Photography" required> Photography</label>
+                    <label class="check-container"><input type="radio" name="Service" value="Films"> Films</label>
+                    <label class="check-container"><input type="radio" name="Service" value="Both"> Both</label>
+                </div>
+                <div class="form-group">
+                    <label>Select Your Package</label>
+                    <select name="Package" required>
+                        <option value="" disabled selected>Select Package</option>
+                        <option value="Nupur raga">Nupur raga</option>
+                        <option value="Jatra radhuni">Jatra radhuni</option>
+                        <option value="Amor bondhon">Amor bondhon</option>
+                        <option value="Rajkiyo bibah">Rajkiyo bibah</option>
+                        <option value="Togor snap">Togor snap</option>
+                        <option value="Joba portrait">Joba portrait</option>
+                        <option value="Bokul frame">Bokul frame</option>
+                        <option value="Shapla shot">Shapla shot</option>
+                        <option value="Purnima shubho">Purnima shubho</option>
+                        <option value="Anandamela">Anandamela</option>
+                        <option value="Alo aroni">Alo aroni</option>
+                        <option value="Nishito shanti">Nishito shanti</option>
+                        <option value="Banbithi tales">Banbithi tales</option>
+                        <option value="Sundarban saga">Sundarban saga</option>
+                        <option value="Banjari trails">Banjari trails</option>
+                        <option value="Vanavihari chronicles">Vanavihari chronicles</option>
+                        <option value="Ekshathe chirodin">Ekshathe chirodin</option>
+                        <option value="Smritir frame">Smritir frame</option>
+                        <option value="Frame e bondhona">Frame e bondhona</option>
+                        <option value="Chirokalin golpo">Chirokalin golpo</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn" style="display:block; margin: 0 auto;">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <img src="logo.png" class="footer-logo" alt="DOCUREEL">
+        <p class="footer-address">docureel@gmail.com | +880 1771-677701<br>Savar, Dhaka, Bangladesh</p>
+        <p class="copyright">© 2026 DOCUREEL. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="script.js"></script>
+</body>
+</html>
